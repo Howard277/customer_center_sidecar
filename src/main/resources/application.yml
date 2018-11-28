@@ -1,0 +1,12 @@
+server.port: 9000
+
+# side car 设置
+sidecar.port: 8000
+sidecar.health-uri: http://localhost:8000/customer/health
+
+# 应用程序在eureka中的显示名称
+spring.application.name: customer_center_sidecar
+# 应用程序实例显示真实ip地址
+eureka.instance.preferIpAddress: true
+# 配置注册中心集群
+eureka.client.service-url.defaultZone: http://registercenter1:8000/eureka
