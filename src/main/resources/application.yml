@@ -5,7 +5,7 @@ sidecar.port: 8000
 sidecar.health-uri: http://localhost:8000/customer/health
 
 # 应用程序在eureka中的显示名称
-spring.application.name: sidecar
+spring.application.name: customer_center_sidecar
 # 应用程序实例显示真实ip地址
 eureka.instance.preferIpAddress: true
 # 配置注册中心集群
